@@ -1,0 +1,16 @@
+        body {
+            background-color: #edeaea;
+        }
+
+        .card {
+            background-color: #233753;
+            color: #edeaea;
+        }
+
+        #btn {
+            margin: 20px;
+        }
+
+        .material-icons {
+            color: yellowgreen;
+        }

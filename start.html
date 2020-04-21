@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Movie Info</title>
+        <style>
+            .div1{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="app">
+           <button v-on:click="addtocart">ADD to Cart</button>
+        <h3>Cart({{cart}})</h3>
+        <div v-for='product in products'
+        :style="background-color: product.productcolor ;" @mouseover>
+
+        </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html> 

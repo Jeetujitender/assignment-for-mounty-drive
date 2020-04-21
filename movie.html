@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title> Movies </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="myapp" class="container">
+        <button v-on:click="top_rated_movies" id="btn" class="btn btn-dark btn-lg"><span class="material-icons">
+                live_tv</span>Top Rated Movies</button>
+        <button v-on:click="up_coming_movies" id="btn" class="btn btn-dark btn-lg"><span class="material-icons">
+                live_tv</span>Up Coming Movies</button>
+        <movie :list=movielist></movie>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
